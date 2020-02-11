@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/06f6dd8427.js" crossorigin="anonymous"></script>
+    <style>
+        .icon-margin {
+            margin-right: 1em;
+        }
+
+        .not-active {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+        <div class="c-sidebar-brand d-lg-down-none" style="background-color:white;">
+            <div style="text-align:center;">
+                <img width="200" height="40" src="~/Content/images/logo.png" />
+                <p style="color:black; font-weight:bolder; font-size:9px; line-height:0.6px;">Employee Management System</p>
+            </div>
+        </div>
+        <ul class="c-sidebar-nav" data-drodpown-accordion="true">
+            <li class="c-sidebar-nav-item">
+                <a class="c-sidebar-nav-link c-active" href="@Url.Action("Dashboard", "Admin")">
+                    <i class="fas fa-tachometer-alt icon-margin"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="c-sidebar-nav-title">User Management</li>
+            <li class="c-sidebar-nav-item">
+                <a class="c-sidebar-nav-link" href="@Url.Action("ManageUsers", "Admin")">
+                    <i class="fas fa-users icon-margin not-active"></i>
+                    Manage Users
+                </a>
+            </li>
+            <li class="c-sidebar-nav-title">Company/Employee Management</li>
+            <li class="c-sidebar-nav-item">
+                <a class="c-sidebar-nav-link" href="@Url.Action("ManageCompanies", "User")">
+                    <i class="fas fa-users icon-margin not-active"></i>
+                    Manage Companies
+                </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+                <a class="c-sidebar-nav-link" href="@Url.Action("ManageEmployees", "User")">
+                    <i class="fas fa-users icon-margin not-active"></i>
+                    Manage Employees
+                </a>
+            </li>
+            <li class="c-sidebar-nav-title">Payroll Management</li>
+            <li class="c-sidebar-nav-item">
+                <a class="c-sidebar-nav-link" href="@Url.Action("PayrollManagement", "Payroll")">
+                    <i class="fas fa-users icon-margin not-active"></i>
+                    Manage Payroll
+                </a>
+            </li>
+            <li class="c-sidebar-nav-item">
+                <a class="c-sidebar-nav-link" href="@Url.Action("PayrollHistory", "Payroll")">
+                    <i class="fas fa-users icon-margin not-active"></i>
+                    Payroll History
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="c-wrapper">
+    @RenderBody()
+    </div>
+</body>
+</html>

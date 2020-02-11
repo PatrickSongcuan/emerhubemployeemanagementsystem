@@ -1,0 +1,61 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Emerhub Employee Management System</title>
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/06f6dd8427.js" crossorigin="anonymous"></script>
+</head>
+<body class="c-app flex-row align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card-group">
+                    <div class="card p-4">
+                        <div class="card-header" style="text-align:center">
+                            <img style="width: 274px; height: 64px;" src="~/Content/images/logo.png" />
+                            <p style="font-size:24px; line-height: 28px; color:black; font-weight:bold"> Employee Management System </p>
+                        </div>
+                        <div class="card-body">
+                            <h4 style="text-align: center;">Sign in to your account</h4>
+                            <br />
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="far fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Username">
+                            </div>
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" type="password" placeholder="Password">
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="@Url.Action("Dashboard", "Admin")" class="btn btn-primary px-4" type="button">Login</a>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <button class="btn btn-link px-0" type="button">Forgot password?</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
